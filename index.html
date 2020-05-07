@@ -58,13 +58,17 @@ letter-spacing:0px;
 }
 .c1
   {
-    width:500px;
+    width:auto;
   }
   #h3
   {
     background-color:white;
     border:1px solid black;
   }
+  #i1
+  {
+    width:100%;
+  } 
 </style>
 <script>
 function fun1(n)
@@ -77,7 +81,7 @@ calform.text1.value=calform.text1.value+n;
  <h1> Calculator</h1>  
 <div class="cal">
 <form name="calform">
-<input type="text" name="text1"/><br/><br/><br/>
+<input type="text" name="text1" id="i1"/><br/><br/><br/>
 <input type="button" name="bun7" value="7" class="c1" onclick="fun1(bun7.value)"/>
 <input type="button" name="bun8" value="8" class="c1" onclick="fun1(bun8.value)"/>
 <input type="button" name="bun9" value="9" class="c1" onclick="fun1(bun9.value)"/>
