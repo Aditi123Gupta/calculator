@@ -3,7 +3,7 @@
 <style type="text/css">
 body
 {
-background-image:url("sky.jpg");
+background-color:yellow;
 }
 .a1
 {
@@ -44,15 +44,19 @@ letter-spacing:0px;
 }
 h1
 {
-color:black;
+color:red;
 text-transform:uppercase;
-text-shadow:4px 6px 5px red;
+text-shadow:4px 6px 5px black;
 text-align:center;
 }
 #clear1
 {
 letter-spacing:0px;
 }
+.c1
+  {
+    width:100px;
+  }
 </style>
 <script>
 function fun1(n)
@@ -66,22 +70,22 @@ calform.text1.value=calform.text1.value+n;
 <div class="cal">
 <form name="calform">
 <input type="text" name="text1"/><br/><br/>
-<input type="button" name="bun7" value="7  " onclick="fun1(bun7.value)"/>
-<input type="button" name="bun8" value="8  " onclick="fun1(bun8.value)"/>
-<input type="button" name="bun9" value="9  " onclick="fun1(bun9.value)"/>
-<input type="button" name="mul" value="*  " onclick="fun1(mul.value)"/><br/><br/>
-<input type="button" name="bun4" value="4  " onclick="fun1(bun4.value)"/>
-<input type="button" name="bun5" value="5  " onclick="fun1(bun5.value)"/>
-<input type="button" name="bun6" value="6  " onclick="fun1(bun6.value)"/>
-<input type="button" name="sub" value="-  " onclick= "fun1(sub.value)"/></br></br>
-<input type="button" name="bun1" value="1" onclick="fun1(bun1.value)"/>
-<input type="button" name="bun2" value="2" onclick="fun1(bun2.value)"/>
-<input type="button" name="bun3" value="3" onclick="fun1(bun3.value)"/>
-<input type="button" name="add" value="+" onclick="fun1(add.value)"/><br/><br/>
-<input type="button" name="bun0" value="0" onclick="fun1(bun0.value)"/>
-<input type="button" name="divi" value="/  " onclick="fun1(divi.value)"/>
-<input type="button" name="mod" value="%  " onclick="fun1(mod.value)"/>
-<input type="button" name="eql" value="=  " onclick="calform.text1.value=eval(calform.text1.value)"/></br></br>
+<input type="button" name="bun7" value="7" class="c1" onclick="fun1(bun7.value)"/>
+<input type="button" name="bun8" value="8" class="c1" onclick="fun1(bun8.value)"/>
+<input type="button" name="bun9" value="9" class="c1" onclick="fun1(bun9.value)"/>
+<input type="button" name="mul" value="*" class="c1" onclick="fun1(mul.value)"/><br/><br/>
+<input type="button" name="bun4" value="4" class="c1" onclick="fun1(bun4.value)"/>
+<input type="button" name="bun5" value="5" class="c1" onclick="fun1(bun5.value)"/>
+<input type="button" name="bun6" value="6" class="c1" onclick="fun1(bun6.value)"/>
+<input type="button" name="sub" value="-" class="c1" onclick= "fun1(sub.value)"/></br></br>
+<input type="button" name="bun1" value="1" class="c1" onclick="fun1(bun1.value)"/>
+<input type="button" name="bun2" value="2" class="c1" onclick="fun1(bun2.value)"/>
+<input type="button" name="bun3" value="3" class="c1" onclick="fun1(bun3.value)"/>
+<input type="button" name="add" value="+" class="c1" onclick="fun1(add.value)"/><br/><br/>
+<input type="button" name="bun0" value="0" class="c1" onclick="fun1(bun0.value)"/>
+<input type="button" name="divi" value="/" class="c1" onclick="fun1(divi.value)"/>
+<input type="button" name="mod" value="%" class="c1" onclick="fun1(mod.value)"/>
+<input type="button" name="eql" value="=" class="c1" onclick="calform.text1.value=eval(calform.text1.value)"/></br></br>
 <input type="button" name="clear" value="clear" id="clear1"onclick="calform.text1.value=' '"/>
 </div>
 <div class="div1">
